@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Superando Pruebas – Registro de Equipos</title>
+  <link rel="stylesheet" href="ranking.css">
+</head>
+<body>
+  <header>
+    <h1>🏆 ¡Bienvenidos a Superando Pruebas!</h1>
+  </header>
+
+  <main>
+    <!-- Sección para registrar equipos -->
+    <section id="registro">
+      <h2>Registrar Equipos</h2>
+      <div id="contenedor-equipos">
+        <!-- Aquí se crearán dinámicamente los formularios de los 8 equipos -->
+      </div>
+      <button id="btn-generar-equipos">Generar Equipos</button>
+      <button id="btn-guardar-equipos" style="display:none;">Guardar Equipos</button>
+    </section>
+
+    <!-- Sección para el ranking -->
+    <section id="ranking" style="display:none;">
+      <h2>Ranking en Vivo</h2>
+      <div id="ranking-visual">
+        <!-- Aquí se insertará el ranking dinámicamente -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Superando Pruebas - Catequesis Creativa</p>
+  </footer>
+
+  <!-- Enlace al archivo JavaScript -->
+  <script src="ranking.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+body {
+    background: linear-gradient(to bottom, #240046, #5a189a);
+    color: #ffffff;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #ffbe0b;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #f15bb5;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  header, footer {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  button {
+    background-color: #ff006e;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #fb5607;
+  }
+  
+  fieldset {
+    border: 2px solid #ffbe0b;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #3c096c;
+  }
+  
+  legend {
+    color: #ffbe0b;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  label {
+    display: inline-block;
+    width: 140px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #fff;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    width: 60%;
+    margin-bottom: 10px;
+  }
+  
+  #ranking-visual {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .barra {
+    background-color: #ffbe0b;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: width 0.4s ease;
+  }
