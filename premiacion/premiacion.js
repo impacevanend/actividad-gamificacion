@@ -55,8 +55,14 @@ function verificarGranInsignia() {
 }
 
 function mostrarGranInsignia(nombre) {
-  document.getElementById("gran-insignia").style.display = "block";
+  const granInsignia = document.getElementById("gran-insignia");
+  const imagen = granInsignia.querySelector("img");
+
+  granInsignia.style.display = "block";
   document.getElementById("mensaje-ganador").innerHTML = `🎉 Felicitaciones al grupo <strong>${nombre}</strong> por obtener la Gran Insignia`;
+
+  // Agregar clase brillante a la insignia
+  imagen.classList.add("insignia-final-brillante");
 
   // efecto confeti
   confetti({
@@ -65,6 +71,7 @@ function mostrarGranInsignia(nombre) {
     origin: { y: 0.6 }
   });
 }
+
 
 // Confetti script
 function confetti(params) {
@@ -75,3 +82,4 @@ function confetti(params) {
   };
   document.body.appendChild(js);
 }
+
