@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ceremonia de Premiación</title>
+  <link rel="stylesheet" href="premiacion.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <header>
+    <h1>🏆 ¡Ceremonia de Premiación!</h1>
+    <p>Entrega las insignias a cada grupo. Cuando estén completas, ¡se desbloqueará la Gran Insignia!</p>
+  </header>
+
+  <main>
+    <section class="contenedor-insignias">
+      <div class="insignia-card" data-index="0">
+        <img class="imagen-insignia" src="insignias/insignia_1.png" alt="Maestros del Triduo" />
+        <input type="text" placeholder="Nombre del grupo" />
+        <button onclick="entregarInsignia(0)">Entregar</button>
+      </div>
+
+      <div class="insignia-card" data-index="1">
+        <img class="imagen-insignia" src="insignias/insignia_2.png" alt="Corazón Sensible" />
+        <input type="text" placeholder="Nombre del grupo" />
+        <button onclick="entregarInsignia(1)">Entregar</button>
+      </div>
+
+      <div class="insignia-card" data-index="2">
+        <img class="imagen-insignia" src="insignias/insignia_3.png" alt="Actores del Amor" />
+        <input type="text" placeholder="Nombre del grupo" />
+        <button onclick="entregarInsignia(2)">Entregar</button>
+      </div>
+
+      <div class="insignia-card" data-index="3">
+        <img class="imagen-insignia" src="insignias/insignia_4.png" alt="Compromiso Real" />
+        <input type="text" placeholder="Nombre del grupo" />
+        <button onclick="entregarInsignia(3)">Entregar</button>
+      </div>
+    </section>
+
+    <section id="gran-insignia" style="display: none;">
+      <h2>🏆 ¡Gran Insignia Desbloqueada!</h2>
+      <p id="mensaje-ganador"></p>
+      <img src="insignias/la_gran_insignia.png" alt="Gran Insignia" />
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Superando Pruebas - Catequesis Creativa</p>
+  </footer>
+
+  <script src="premiacion.js"></script>
+</body>
+</html>

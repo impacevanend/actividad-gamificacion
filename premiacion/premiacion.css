@@ -1,0 +1,98 @@
+body {
+  background: linear-gradient(to bottom, #240046, #5a189a);
+  color: #ffffff;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #ffbe0b;
+  font-size: 2.5rem;
+}
+
+h2 {
+  color: #f15bb5;
+  font-size: 2rem;
+  margin: 20px 0 10px;
+}
+
+button {
+  background-color: #c1126b;
+  color: #fff;
+  font-size: 1rem;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #ffbe0b;
+  color: #240046;
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.contenedor-insignias {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.insignia-card {
+  border: 2px solid #ffbe0b;
+  border-radius: 10px;
+  background-color: #3c096c;
+  padding: 20px;
+  width: 220px;
+  position: relative;
+}
+
+.imagen-insignia {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  transition: transform 0.4s ease, filter 0.3s;
+  filter: brightness(0.4);
+}
+
+.insignia-entregada {
+  filter: brightness(1.1) drop-shadow(0 0 15px gold);
+  animation: zoom-brillo 1s ease;
+}
+
+@keyframes zoom-brillo {
+  0% {
+    transform: scale(0.4) rotate(0deg);
+  }
+  60% {
+    transform: scale(1.2) rotate(360deg);
+  }
+  100% {
+    transform: scale(1) rotate(720deg);
+  }
+}
+
+#gran-insignia img {
+  width: 200px;
+  margin-top: 15px;
+  animation: aparecer 1.2s ease-in-out;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: scale(0.3); }
+  to { opacity: 1; transform: scale(1); }
+}
